@@ -9,7 +9,7 @@ public class bruhskipscene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("RotationScene");
+            SceneManager.LoadScene("NewMiddle2");
         }
     }
 }

@@ -9,7 +9,7 @@ public class SkipSceneeee : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("RotationCube");
+            SceneManager.LoadScene("NewMiddle2");
         }
     }
 }
