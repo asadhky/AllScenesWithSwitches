@@ -9,7 +9,7 @@ public class SkipScene2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("MoveObjectScene");
+            SceneManager.LoadScene("NewMiddle3");
         }
     }
 }

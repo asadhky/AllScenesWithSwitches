@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SkipScene1 : MonoBehaviour
+public class Mid3 : MonoBehaviour
 {
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("NewMiddle1");
+            SceneManager.LoadScene("MoveObjectScene");
         }
     }
 }
