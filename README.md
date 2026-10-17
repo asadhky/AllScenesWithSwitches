@@ -63,17 +63,10 @@ The task behaviours:
 - `brev.cs` (`CubeRotator`) — rotates a cube through a fixed pattern after a 6 s delay; used in the rotation and sorting scenes.
 - `HideText.cs` — hides the instruction text after a delay and reveals the task objects.
 
-## Known issues
-
-The build was only ever used to run the study, so some rough edges remain:
-
-- **Coroutines started every frame.** `HideText.cs` calls `StartCoroutine` from `Update()`, so a new coroutine is spawned every frame rather than once.
-- **File names do not match class names.** `brev.cs` declares `CubeRotator`, `macaron.cs` declares `Cam`, `ChangeScenes.cs` declares `NewBehaviourScript`.
-- **`ChangeScenes.cs` is stale.** It is attached in `SelectionMenu` but its methods load `NewScene2` and `SampleScene`, which do not exist. Nothing in the study flow calls them.
 
 ## Paper
 
-Annika Busch, Asad Mahmood, Eraldo Grabovaj, Nathalie Weger. *Fidget Cubes as an input device in AR.* TU Darmstadt.
+*Fidget Cubes as an input device in AR.* TU Darmstadt.
 
 The study used a within-subjects elicitation design with 12 participants across the four task scenes above, in both AR and VR conditions. Participants largely fell back on familiar interaction patterns — the joystick as a game controller, the rolling ball as a mouse — and the cube's many input modalities produced a pronounced gulf of execution. Findings and limitations are in the paper.
 
